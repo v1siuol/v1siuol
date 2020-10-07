@@ -1,16 +1,21 @@
 ### Hi there 👋
 
-<!--
-**v1siuol/v1siuol** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#### 💛 I'm <a href="https://v1siuol.com/" target="_blank">v1siuol</a>
 
-Here are some ideas to get you started:
+<!-- self_intro starts -->
+- Backend software engineer @FactSet
+<!-- TODO add posts -->
+- Recent posts: <a href='https://v1siuol.com/hello-world/' target='_blank'>Hello World</a>
+<!-- self_intro ends -->
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### 💚 v1siuol's GitHub Stats
+
+<!-- github_stats starts -->
+![v1siuol's github stats](https://github-readme-stats.vercel.app/api?username=v1siuol&count_private=true&show_icons=true&hide_title=true&include_all_commits=true)
+<!-- github_stats ends -->
+
+#### 💜 v1sioul's Wakatime Stats
+
+<!-- code_time starts -->
+![v1sioul's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=v1siuol&hide_title=true)
+<!-- code_time ends -->
