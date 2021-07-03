@@ -3,9 +3,9 @@
 #### 💛 I'm <a href="https://v1siuol.com/" target="_blank">v1siuol</a>
 
 <!-- self_intro starts -->
-- Backend software engineer @FactSet
+- Software Engineer @FactSet
 <!-- TODO add posts -->
-- Recent posts: <a href='https://v1siuol.com/hello-world/' target='_blank'>Hello World</a>
+- Recent posts: <a href='https://v1siuol.com/%E3%80%8A%E6%91%86-%E7%83%82%E3%80%8B/' target='_blank' rel="noopener noreferrer">《摆 烂》</a>
 <!-- self_intro ends -->
 
 #### 💚 v1siuol's GitHub Stats
