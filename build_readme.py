@@ -92,7 +92,7 @@ def get_readme_path() -> str:
     """Get the correct readme path."""
     # Get the directory of the script being run
     path = pathlib.Path(__file__).parent.resolve()
-    file_name = 'README2.md'
+    file_name = 'README.md'
     readme_path = os.path.join(path, file_name)
     return readme_path
 
