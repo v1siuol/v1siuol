@@ -19,4 +19,4 @@
 ![v1sioul's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=v1siuol&hide_title=true)
 <!-- code_time ends -->
 
-#### 💜 The above sections are generated daily by <a href="https://github.com/v1siuol/v1siuol/actions" target="_blank" rel="noopener noreferrer">v1siuol/Actions</a>
+#### 💜 The sections above are generated daily by <a href="https://github.com/v1siuol/v1siuol/actions" target="_blank" rel="noopener noreferrer">v1siuol/Actions</a>
