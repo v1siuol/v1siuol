@@ -92,7 +92,10 @@ def get_readme_path() -> str:
     """Get the current readme path."""
     # Get the directory of the script being run
     path = pathlib.Path(__file__).parent.resolve()
-    file_name = 'README.md'
+    environment = os.environ.get('ENV') or 'development'
+    file_name = 'README-dev.md'
+    if environment == 'release':
+        file_name = 'README.md'
     readme_path = os.path.join(path, file_name)
     return readme_path
 
