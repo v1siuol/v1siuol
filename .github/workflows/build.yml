@@ -39,7 +39,7 @@ jobs:
         git config --global user.email $EMAIL
         git config --global user.name $AUTHOR
         git diff
-        git pull
+        git pull origin main
         git add -A
         git commit -m "$COMMIT_MSG" || exit 0
-        git push
+        git push origin main
