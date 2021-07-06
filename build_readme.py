@@ -8,7 +8,7 @@ Example:
     $ python build_readme.py
 
 Warning:
-    This method will overwrite your `README.md`. If you are unfamiliar with this project,
+    This module will overwrite your `README.md`. If you are unfamiliar with this project,
     backup the file first.
 """
 
@@ -41,7 +41,7 @@ def default_template() -> str:
 ![v1sioul's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=v1siuol&hide_title=true)
 <!-- code_time ends -->
 
-#### 💜 The above sections are generated daily by <a href="https://github.com/v1siuol/v1siuol/actions" target="_blank" rel="noopener noreferrer">v1siuol/Actions</a>
+#### 💜 The sections above are generated daily by <a href="https://github.com/v1siuol/v1siuol/actions" target="_blank" rel="noopener noreferrer">v1siuol/Actions</a>
 """
 
 def replace_chunk(content: str, marker: str, chunk: str, inline : bool = False) -> str:
@@ -89,7 +89,7 @@ def format_posts() -> str:
     return posts_md
 
 def get_readme_path() -> str:
-    """Get the correct readme path."""
+    """Get the current readme path."""
     # Get the directory of the script being run
     path = pathlib.Path(__file__).parent.resolve()
     file_name = 'README.md'
