@@ -1,5 +1,6 @@
 """Template for header."""
 
+from __future__ import annotations  # pylint: disable=no-name-in-module
 from config import Config  # pylint: disable=import-error
 
 

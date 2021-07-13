@@ -1,5 +1,6 @@
 """Template for code_time."""
 
+from __future__ import annotations  # pylint: disable=no-name-in-module
 from config import Config  # pylint: disable=import-error
 
 
