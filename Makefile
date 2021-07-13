@@ -3,7 +3,7 @@ SHELL = /bin/sh
 .PHONY: init mypy pylint test dev build clean
 
 init:
-	pip install -r requirements.txt  # Install dependencies
+	pip install -r build_readme/requirements.txt  # Install dependencies
 
 mypy:
 	mypy --ignore-missing-imports build_readme
