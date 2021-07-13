@@ -3,9 +3,10 @@ This module fetches recent posts in v1siuol's blog and then updates README.md.
 
 Example:
     $ pip install -r requirements.txt  # Install dependencies
-    $ pylint build_readme.py  # Linter
-    $ mypy --ignore-missing-imports build_readme.py
-    $ python build_readme.py
+    $ pylint *.py **/*.py  # Linter
+    $ mypy --ignore-missing-imports .
+    $ python build_readme.py  # For development
+    $ ENV=release python build_readme.py  # For release
 
 Warning:
     This module will overwrite your `README.md`. If you are unfamiliar with this project,
@@ -16,32 +17,40 @@ from __future__ import annotations  # pylint: disable=no-name-in-module
 import pathlib
 import re
 import os
-import feedparser  # pylint: disable=import-error
+from layout.header import inject_header  # pylint: disable=import-error
+from layout.about_me import format_posts  # pylint: disable=import-error
+from layout.github_stats import inject_github_stats  # pylint: disable=import-error
+from layout.code_time import inject_code_time  # pylint: disable=import-error
+from layout.footer import inject_footer  # pylint: disable=import-error
+
 
 def default_template() -> str:
     """Return a default template in string."""
-    return r"""### Hi there 👋
+    # TODO (v1siuol): Consider move it to layout/index
+    return r"""<!-- header starts -->
 
+<!-- header ends -->
+
+<!-- about_me_block starts -->
 #### 💛 I'm <a href="https://v1siuol.com/" target="_blank" rel="noopener noreferrer">v1siuol</a>
 
-<!-- self_intro starts -->
+<!-- my_title starts -->
 - Software Engineer @FactSet
+<!-- my_title ends -->
 - Recent posts: <!-- recent_posts starts --><!-- recent_posts ends -->
-<!-- self_intro ends -->
+<!-- about_me_block starts -->
 
-#### 💚 v1siuol's GitHub Stats
+<!-- github_stats_block starts -->
 
-<!-- github_stats starts -->
-![v1siuol's github stats](https://github-readme-stats.vercel.app/api?username=v1siuol&count_private=true&show_icons=true&hide_title=true&include_all_commits=true)
-<!-- github_stats ends -->
+<!-- github_stats_block ends -->
 
-#### 💙 v1sioul's Wakatime Stats
+<!-- code_time_block starts -->
 
-<!-- code_time starts -->
-![v1sioul's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=v1siuol&hide_title=true)
-<!-- code_time ends -->
+<!-- code_time_block ends -->
 
-#### 💜 The sections above are generated daily by <a href="https://github.com/v1siuol/v1siuol/actions" target="_blank" rel="noopener noreferrer">v1siuol/Actions</a>
+<!-- footer starts -->
+
+<!-- footer ends -->
 """
 
 def replace_chunk(content: str, marker: str, chunk: str, inline : bool = False) -> str:
@@ -59,34 +68,14 @@ def replace_chunk(content: str, marker: str, chunk: str, inline : bool = False) 
 
 def overwrite_template(template: str) -> str:
     """Overwrite the template by markers."""
+    template = replace_chunk(template, 'header', inject_header(), inline=False)
+    # TODO (v1siuol): Enhance about_me_block layout
     template = replace_chunk(template, 'recent_posts', format_posts(), inline=True)
+    template = replace_chunk(template, 'github_stats_block', inject_github_stats(), inline=False)
+    template = replace_chunk(template, 'code_time_block', inject_code_time(), inline=False)
+    template = replace_chunk(template, 'footer', inject_footer(), inline=False)
+
     return template
-
-def fetch_posts() -> list[dict[str, str]]:
-    """Fetch posts in rss feed."""
-    response = feedparser.parse('https://v1siuol.com/rss2.xml')
-
-    if response.status != 200:
-        raise ConnectionError()
-    entries = response['entries']
-    if len(entries) <= 0:
-        raise UserWarning('No fetched posts.')
-
-    return [
-        {
-            'title': entry['title'],
-            'url': entry['link']
-        }
-        for entry in entries
-    ]
-
-def format_posts() -> str:
-    """Format posts properly."""
-    entries = fetch_posts()[:5]
-    posts_md = ' | '.join(
-        ['<a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>'.format(**entry) for entry in entries]  # pylint: disable=line-too-long
-    )
-    return posts_md
 
 def get_readme_path() -> str:
     """Get the current readme path."""
