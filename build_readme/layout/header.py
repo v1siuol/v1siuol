@@ -1,8 +1,6 @@
 """Template for header."""
 
-import sys
-sys.path.append('..')
-from config import Config  # pylint: disable=wrong-import-position
+from config import Config  # pylint: disable=import-error
 
 
 def enable_header() -> bool:

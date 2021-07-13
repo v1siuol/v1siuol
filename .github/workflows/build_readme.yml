@@ -9,7 +9,7 @@ on:
     - cron:  '0 0 * * *'
 
 jobs:
-  build:
+  build_readme:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
@@ -32,7 +32,7 @@ jobs:
       env:
         ENV: release
       run: |
-        python build_readme.py
+        make build
         cat README.md
     - name: Commit and push if changed
       env:
