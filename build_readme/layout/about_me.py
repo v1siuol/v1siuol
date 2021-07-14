@@ -1,8 +1,10 @@
 """Template for about_me."""
 
+from typing import List, Dict
 import feedparser  # pylint: disable=import-error
 from config import Config  # pylint: disable=import-error
 import utils  # pylint: disable=import-error
+
 
 def inject_about_me() -> str:
     """Return about_me_block_md."""
@@ -38,7 +40,7 @@ def enable_recent_posts() -> bool:
     """Return True if recent_posts enabled, i.e., output recent posts block."""
     return Config.ENABLE_RECENT_POSTS
 
-def fetch_posts() -> list[dict[str, str]]:  # pylint: disable=unsubscriptable-object
+def fetch_posts() -> List[Dict[str, str]]:
     """Fetch posts in rss feed."""
     response = feedparser.parse(Config.BLOG_FEED_URL)
 
