@@ -15,7 +15,6 @@ Warning:
     backup the file first.
 """
 
-from __future__ import annotations  # pylint: disable=no-name-in-module
 import os
 from layout.index import generate_readme  # pylint: disable=import-error
 

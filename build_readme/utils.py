@@ -1,6 +1,5 @@
 """This module provides utility functions that are used within build_readme."""
 
-from __future__ import annotations  # pylint: disable=no-name-in-module
 import re
 import sys
 

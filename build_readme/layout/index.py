@@ -1,6 +1,5 @@
 """Template for the README.md layout."""
 
-from __future__ import annotations  # pylint: disable=no-name-in-module
 import utils  # pylint: disable=import-error
 from .header import inject_header
 from .about_me import inject_about_me

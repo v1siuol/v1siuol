@@ -1,6 +1,6 @@
 """Template for github_stats."""
 
-from __future__ import annotations  # pylint: disable=no-name-in-module
+  # pylint: disable=no-name-in-module
 from config import Config  # pylint: disable=import-error
 
 

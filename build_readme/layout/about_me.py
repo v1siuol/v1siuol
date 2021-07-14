@@ -1,6 +1,5 @@
 """Template for about_me."""
 
-from __future__ import annotations  # pylint: disable=no-name-in-module
 import feedparser  # pylint: disable=import-error
 from config import Config  # pylint: disable=import-error
 import utils  # pylint: disable=import-error
@@ -39,7 +38,7 @@ def enable_recent_posts() -> bool:
     """Return True if recent_posts enabled, i.e., output recent posts block."""
     return Config.ENABLE_RECENT_POSTS
 
-def fetch_posts() -> list[dict[str, str]]:
+def fetch_posts() -> list[dict[str, str]]:  # pylint: disable=unsubscriptable-object
     """Fetch posts in rss feed."""
     response = feedparser.parse(Config.BLOG_FEED_URL)
 
