@@ -1,0 +1,12 @@
+astroid
+feedparser
+isort
+lazy-object-proxy
+mccabe
+mypy
+mypy-extensions
+pylint
+sgmllib3k
+toml
+typing-extensions
+wrapt
