@@ -1,6 +1,7 @@
 # Build README
 
 [![Tests](https://github.com/v1siuol/v1siuol/actions/workflows/test.yml/badge.svg)](https://github.com/v1siuol/v1siuol/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./build_readme/LICENSE.md)
 
 Build README is an automatic app that builds a decent section on your public profile.
 
