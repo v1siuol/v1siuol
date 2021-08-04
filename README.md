@@ -9,7 +9,7 @@
 - Software Engineer @FactSet
 <!-- self_intro ends -->
 <!-- recent_posts starts -->
-- Recent posts: <a href="https://v1siuol.com/%E3%80%8A%E6%91%86-%E7%83%82%E3%80%8B/" target="_blank" rel="noopener noreferrer">《摆 烂》</a>
+- Recent posts: <a href="https://v1siuol.com/%E3%80%8A%E6%91%86-%E7%83%82%E3%80%8B/" target="_blank" rel="noopener noreferrer">《摆 烂》</a> | <a href="https://v1siuol.com/Flask-Traditional-Deployments-Zero-to-One-Setup-a-VPS/" target="_blank" rel="noopener noreferrer">Flask Traditional Deployments: Zero to One &lt;Setup a VPS&gt;</a>
 <!-- recent_posts ends -->
 <!-- about_me_block ends -->
 
