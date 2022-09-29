@@ -24,7 +24,7 @@ Demo: https://github.com/v1siuol
 5. `python build_readme/build_readme.py > README.md`
 
 ## Repository contents
-_with respect to the root directory_
+*with respect to the root directory*
 - **build_readme/config.py**: Custom configurations.
 - **Makefile**: Handy and useful tool to communicate with python codes. You can reference commands here.
 - **build_readme/build_readme.py**: Main interface to build README.md: Start here.
