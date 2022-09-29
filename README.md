@@ -6,9 +6,7 @@
 #### 💛 I'm <a href="https://v1siuol.com/" target="_blank" rel="noopener noreferrer">v1siuol</a>
 
 <!-- self_intro starts -->
-- Grad Student @CMU
-
-- ex Software Engineer @FactSet
+- Software Engineer @FactSet
 <!-- self_intro ends -->
 <!-- recent_posts starts -->
 - Recent posts: <a href="https://v1siuol.com/%E3%80%8A%E6%91%86-%E7%83%82%E3%80%8B/" target="_blank" rel="noopener noreferrer">《摆 烂》</a> | <a href="https://v1siuol.com/Flask-Traditional-Deployments-Zero-to-One-Explore-HTTPS/" target="_blank" rel="noopener noreferrer">Flask Traditional Deployments: Zero to One &lt;Explore HTTPS&gt;</a> | <a href="https://v1siuol.com/Flask-Traditional-Deployments-Zero-to-One-Hello-NGINX/" target="_blank" rel="noopener noreferrer">Flask Traditional Deployments: Zero to One &lt;Hello NGINX&gt;</a> | <a href="https://v1siuol.com/Flask-Traditional-Deployments-Zero-to-One-Deploy-uWSGI/" target="_blank" rel="noopener noreferrer">Flask Traditional Deployments: Zero to One &lt;Deploy uWSGI&gt;</a> | <a href="https://v1siuol.com/Flask-Traditional-Deployments-Zero-to-One-Flask-Server/" target="_blank" rel="noopener noreferrer">Flask Traditional Deployments: Zero to One &lt;Flask Server&gt;</a>
