@@ -62,7 +62,8 @@ def format_posts() -> str:
     """Format posts properly."""
     entries = fetch_posts()[:Config.POSTS_DISPLAYED_NUM]
     posts_md = ' | '.join(
-        ['<a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>'.format(**entry) for entry in entries]  # pylint: disable=line-too-long
+        # ['<a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>'.format(**entry) for entry in entries]  # pylint: disable=line-too-long
+        [f'<a href="{entry["url"]}" target="_blank" rel="noopener noreferrer">{entry["title"]}</a>'for entry in entries]  # pylint: disable=line-too-long
     )
     return posts_md
 

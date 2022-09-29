@@ -33,7 +33,7 @@ def get_readme_path() -> str:
 def overwrite_readme(template: str) -> None:
     """[deprecated] Overwrite readme."""
     readme_path = get_readme_path()
-    with open(readme_path, 'w+') as readme:
+    with open(readme_path, 'w+', encoding="utf-8") as readme:
         readme.write(template)
 
 def output_readme(template: str) -> None:

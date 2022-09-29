@@ -12,7 +12,7 @@ def replace_chunk(content: str, marker: str, chunk: str, inline : bool = False) 
         re.DOTALL,
     )
     if not inline:
-        chunk = '\n{}\n'.format(chunk)
+        chunk = f'\n{chunk}\n'
     chunk = '<!-- {section} starts -->{section_info}<!-- {section} ends -->'.format(
         section=marker, section_info=chunk)
     return pattern.sub(chunk, content)
