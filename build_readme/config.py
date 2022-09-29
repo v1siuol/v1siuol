@@ -7,7 +7,7 @@ class Config:  # pylint: disable=too-few-public-methods
 
     ENABLE_HEADER = True
 
-    SELF_INTRO = 'Software Engineer @FactSet'
+    SELF_INTRO = 'Grad Student @CMU | ex SWE @FactSet'
     ENABLE_RECENT_POSTS = True
     BLOG_FEED_URL = 'https://v1siuol.com/rss2.xml'
     POSTS_DISPLAYED_NUM = 5
