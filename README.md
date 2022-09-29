@@ -7,7 +7,6 @@
 
 <!-- self_intro starts -->
 - Grad Student @CMU
-
 - ex Software Engineer @FactSet
 <!-- self_intro ends -->
 <!-- recent_posts starts -->
