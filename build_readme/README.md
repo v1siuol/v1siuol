@@ -13,7 +13,7 @@ Demo: https://github.com/v1siuol
 - Deploy automatically.
 
 ## Requirements
-- python (3.6+)
+- python (3.7+)
 - pip
 
 ## Installation
